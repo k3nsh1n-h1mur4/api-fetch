@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{ title}}
+{% endblock %}
+
+{% block content %}
+
+    <form action="" method="post">
+        <div>
+            <label for="">Usuario:</label>
+            <input type="text" name="username" id="" autofocus>
+        </div>
+
+        <div>
+            <label for="">Password:</label>
+            <input type="password" name="password" id="">
+        </div>
+
+        <div>
+            <input type="submit" value="Guardar" onclick="ValidateFieldEmpty()">
+        </div>
+
+    </form>
+
+{% endblock %}
